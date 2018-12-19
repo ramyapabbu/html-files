@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html>
+<head>
+    
+    <title>HIDE</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        console.log("jWuery är igång")
+
+        $("button").click(function(){
+            console.log("vi tryckte på knapp");
+            $("p").toggle(1000);
+            
+        })
+       
+        
+ $(".lorem").mouseover(function(){
+            $(".lorem").hide();    
+        })
+    });
+    </script>
+
+</head>
+<body>
+        <h1>HELLO</h1>
+        <p>World!</p>
+        <p class="lorem">Lorem ipsum</p>  
+        <button>Dölj</button>
+</body>
+</html>

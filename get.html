@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <title>get</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <script>
+        $(document).ready(function(){
+            $(".t").click(function(){
+                console.log("text: "+$("#tt").text());
+            })
+            
+            $(".html").click(function(){
+                console.log("html: "+$("#tt").html());
+            })
+
+            $(".val").click(function(){
+                console.log("val: "+$(".input").val());
+            })
+
+            $(".attr").click(function(){
+                console.log("länk: "+$(".link").attr("href"));
+            })
+            $("#change").click(function(){
+                console.log("yes")
+            })
+            
+            $(".remove").click(function(){
+                $("#tt").remove();
+            })
+
+             $(".empty").click(function(){
+                $("#tt").empty();
+            })
+
+                $(".color").click(function(){
+                
+                $("#tt").css("background-color","blue");
+            })
+
+        });
+        </script>
+    </head>
+    <body>
+       <button class="t" >Text</button>  <button class="html" >Html</button>  <button class="val" >Val</button>  <button class="attr" >Attr </button> <button class="change">change name</button> <button class="empty">empty</button> <button class="remove">remove</button> <button class="color">change color </button>
+        <div id="tt">
+            <h1 id="test1">Hello World</h1>
+            <p class="txt">Lorem ipsum</p>
+        </div>
+        <input class="input" type="text"/>
+                <br><br>
+        <a class="link" href="www.boras.se">www.boras.se</a>
+
+
+    </body>
+</html>

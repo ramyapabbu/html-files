@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>HIDE</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $(".div1").hide();
+        $(".div2").hide();
+        $(".div3").hide();
+
+        $(".c1").click(function(){
+            console.log("click knap 1")
+            $(".div1").fadeIn(1000);
+            $(".div2").hide();
+            $(".div3").hide();
+        })
+
+        $(".c2").click(function(){
+            console.log("click knap 2")
+            $(".div1").hide();
+            $(".div2").fadeIn(1000);
+            $(".div3").hide();
+        })
+
+        $(".c3").click(function(){
+            console.log("click knap 3")
+            $(".div1").hide();
+            $(".div2").hide();
+            $(".div3").fadeIn(1000);
+
+        })
+    });
+    </script>
+<style>
+    #sub{ 
+        width: 400px;
+        height: 300px;
+        background-color: brown;
+    }
+    .menu{
+        width: 370px;
+        height: 300px;
+        background-color: brown; 
+        display: flex;
+        list-style: none;
+        padding: 10px 15px;
+    
+    }
+    ul, li, a{ 
+        padding: 10px 15px;
+        color:black;
+        text-decoration: none;
+    }
+    .div1, .div2, .div3{
+        width: 400px;
+        height: 300px;
+        background-color: brown;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+   
+    <div id="sub"><H1>Hello World!</H1></div>
+    <ul class="menu">
+        <li><a class="c1" href="#"><h2>div1</h2> </a></li>
+        <li><a class="c2" href="#"><h2>div2</h2></a></li>
+        <li><a class="c3" href="#"><h2>div3</h2></a></li>
+    </ul>
+    <div class="content">
+    <div class="div1"> THIS IS DIV 1</div>
+    <div class="div2"> THIS IS DIV 2</div>
+    <div class="div3"> THIS IS DIV 3</div>
+    </div>
+
+</body>
+</html>
+
+
+Collapse 
